@@ -1,22 +1,22 @@
-Gradient-animation : Summary
+Summary
 =======================
 
 Sass mixin that lets anyone easily implement an animated background gradient.
 
 
-Gradient-animation: Usage
+Usage
 =======================
 
 After you've included the SCSS file into your project you simply need to include it in the SCSCC for the element
 you'd like to animate, like so:
 
-element {
+__element {
   @include gradient-animation($direction, $duration, ($colors))
-}
+}__
 
 The mixin takes three arguments:
 
-$direction: This is the direction of the linear animation, e.g., 125deg.
+_$direction:_ This is the direction of the linear animation, e.g., 125deg.
 $duration: The total animation time in seconds, e.g., 40s. I recommend 30s+ for a smooth gradient.
 $colors: This is a list of colors you'd like to include in the animation. Pass the list inside parantheses. 
 
