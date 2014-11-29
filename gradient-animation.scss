@@ -1,13 +1,13 @@
-@mixin color-animate($direction, $duration, $colors){
+@mixin gradient-animate($direction, $duration, $colors){
 $size: length($colors) * 200%;  
 background: linear-gradient($direction, $colors);
 background-size: $size $size;
 
-  @include keyframes(color-animate){
+  @include keyframes(gradient-animate){
     0%{background-position: 0% 0%}
     50%{background-position: 100% 100%}
     100%{background-position:0% 0%}
   };
   
-  @include animation(color-animate $duration linear infinite);
+  @include animation(gradient-animate $duration linear infinite);
 }
