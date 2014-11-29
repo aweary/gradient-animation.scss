@@ -12,7 +12,9 @@ After you've included the SCSS file into your project you simply need to include
 you'd like to animate, like so:
 
 _element {
+
   @include gradient-animation($direction, $duration, ($colors))
+  
 }_
 
 The mixin takes three arguments:
